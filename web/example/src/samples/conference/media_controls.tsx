@@ -39,7 +39,7 @@ const WebcamToggle = () => {
     const [stream, err, streamChanger] = useSharedUserMedia("main-camera");
     let [cam_device,] = useCameraState("");
     const [enable, setEnable] = useState(!!stream);
-    const publisher = usePublisher({ kind: StreamKinds.VIDEO, name: 'video_main', simulcast: true })
+    const publisher = usePublisher({ kind: StreamKinds.VIDEO, name: 'video_main', simulcast: false })
 
     console.log(stream, enable);
 
