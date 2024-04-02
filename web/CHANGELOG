@@ -1,0 +1,6 @@
+# Versions
+
+- 0.0.5: Fixing context wrong state
+- 0.0.4: Add useConsumerPair hook
+- 0.0.2: Fixing publisher overwrite config bug
+- 0.0.1: First version with working: Publish, Subscribe, Audio Mixer

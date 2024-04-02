@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, 
+body,
+#root {
+  height: 100%;
+}
+
+.flex-grow-row {
+  min-width: 0;
+}
+
+.flex-grow-col {
+  min-height: 0;
+}

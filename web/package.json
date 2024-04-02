@@ -1,0 +1,35 @@
+{
+  "name": "bluesea-media-react-sdk",
+  "version": "1.0.1-alpha.1",
+  "description": "Bluesea Media React SDK",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "scripts": {
+    "prepare": "rm -rf /dist && npm run build:esm && npm run build:cjs && npm run build:es6",
+    "build": "rm -rf /dist && npm run build:esm && npm run build:cjs && npm run build:es6",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module CommonJS --outDir dist/cjs",
+    "build:es6": "tsc --module es6 --outDir dist/es6"
+  },
+  "keywords": [
+    "bluesea",
+    "streaming"
+  ],
+  "author": "giangndm@bluesea.network",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.11.9",
+    "@types/react": "^18.0.25",
+    "@types/react-dom": "^18.0.9",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^4.9.3"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "dependencies": {
+    "bluesea-media-js-sdk": "1.2.1-alpha.2"
+  }
+}
